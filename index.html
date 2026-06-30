@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium animated portfolio website for Yogesh Kalmodiya, AI and Machine Learning Engineer.">
+  <title>Yogesh Kalmodiya | AI Engineer Portfolio</title>
+  <link rel="icon" href="assets/yk-favicon.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-mark">YK</div>
+    <div class="loader-line"><span></span></div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="particle-field" id="particleField" aria-hidden="true"></div>
+  <button class="theme-toggle floating-theme-toggle magnetic" id="themeToggle" type="button" aria-label="Switch theme">
+    <span class="theme-icon">☾</span>
+    <span class="theme-label">Dark</span>
+  </button>
+
+  <!-- Navigation -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-shell">
+      <a href="#home" class="logo magnetic" aria-label="Yogesh Kalmodiya home">
+        <img src="assets/yk-favicon.svg" alt="YK logo">
+      </a>
+      <button class="menu-toggle magnetic" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a class="nav-resume magnetic" href="assets/resume.pdf" download target="_blank">Download Resume</a>
+        <a class="btn btn-small magnetic ripple" href="#contact">Hire Me</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero section-pad" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Yogesh Kalmodiya</h1>
+          <h2><span id="typingText"></span><span class="typing-caret"></span></h2>
+          <p class="hero-intro">
+            AI and Machine Learning enthusiast building clean, intelligent and human-focused digital products with Python, data science and modern web technologies.
+          </p>
+          <div class="hero-actions">
+            <a class="btn magnetic ripple" href="#contact">Hire Me</a>
+            <a class="btn btn-ghost magnetic ripple" href="assets/resume.pdf" download>Download Resume</a>
+          </div>
+          <div class="social-row">
+            <span>Follow Me</span>
+            <a href="https://github.com/Yogeshkalmodiya9" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/yogesh-kalmodiya-895788291/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://leetcode.com/u/Yogeshkalmodiya9/" target="_blank" rel="noopener">LeetCode</a>
+            <a href="https://www.hackerrank.com/Yogeshkalmodiya9" target="_blank" rel="noopener">HackerRank</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="profile-orbit" id="profileOrbit">
+            <div class="profile-frame">
+              <img src="assets/profile.jpg" alt="Professional portrait of Yogesh Kalmodiya">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-pad" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About</p>
+        <h2>Focused on intelligent systems that feel effortless.</h2>
+      </div>
+      <div class="about-card reveal">
+        <article>
+          <h3>Professional Introduction</h3>
+          <p>I am Yogesh Kalmodiya, an Artificial Intelligence and Machine Learning student passionate about creating practical ML models, elegant web interfaces and useful automation.</p>
+        </article>
+        <article>
+          <h3>Career Objective</h3>
+          <p>To grow into a high-impact AI engineer who solves real business problems with reliable models, thoughtful engineering and clean user experiences.</p>
+        </article>
+        <article>
+          <h3>Interests</h3>
+          <p>Machine learning, deep learning, data analysis, web development, computer vision and building portfolio-grade projects that demonstrate real skill.</p>
+        </article>
+        <article>
+          <h3>Passion & Goals</h3>
+          <p>I enjoy learning fast, building consistently and turning complex concepts into products that recruiters, teams and users can understand immediately.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section-pad" id="education">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Education</p>
+        <h2>A steady path toward AI engineering.</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div>
+            <p>Secondary Education</p>
+            <h3>10th Standard</h3>
+            <span>Strong academic foundation and disciplined learning habits.</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div>
+            <p>Senior Secondary</p>
+            <h3>12th Standard</h3>
+            <span>Built interest in technology, mathematics and problem solving.</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div>
+            <p>Diploma • 2024</p>
+            <h3>Diploma in Computer Science</h3>
+            <span>Malwa Institute Science and Technology, Indore.</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div>
+            <p>Undergraduate Degree</p>
+            <h3>B.Tech in Artificial Intelligence & Machine Learning</h3>
+            <span>Focused on AI, ML, Python, data science, deep learning and web development.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section-pad" id="experience">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Building practical experience through projects and continuous learning.</h2>
+      </div>
+      <div class="card-grid">
+        <article class="experience-card reveal tilt-card">
+          <span>2014 - Present</span>
+          <h3>Cyber Cafe & MPOnline Service Operator</h3>
+          <p>Self-employed operator managing Passport, Aadhaar, PAN Card, Driving License, Insurance and online services with strong documentation, payment handling, customer support, multitasking and problem-solving skills.</p>
+        </article>
+        <article class="experience-card reveal tilt-card">
+          <span>1 Month</span>
+          <h3>Python Intern — UnizzTech</h3>
+          <p>Worked on Python scripting and automation tasks, assisted in debugging and improving code, and gained hands-on experience with VS Code and GitHub workflows.</p>
+        </article>
+        <article class="experience-card reveal tilt-card">
+          <span>Current</span>
+          <h3>AI & ML Project Builder</h3>
+          <p>Designing machine learning workflows, training prediction models and turning notebooks into portfolio-ready outcomes.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-pad" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>A balanced toolkit for AI, software and product execution.</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <h3>Programming</h3>
+          <p>Python, Java, C++, JavaScript</p>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Web</h3>
+          <p>HTML, Tailwind CSS, JavaScript</p>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Machine Learning</h3>
+          <p>ML, Deep Learning, CNN, Pandas, NumPy, Scikit-Learn</p>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Tools</h3>
+          <p>Git, GitHub, VS Code, Jupyter Notebook</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section-pad" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Featured Projects</p>
+        <h2>Selected work with practical machine learning value.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal tilt-card">
+          <a class="project-art project-art-image" href="https://github.com/Yogeshkalmodiya9/Diabetes_ML_Model.git" target="_blank" rel="noopener" aria-label="Open Diabetes Prediction GitHub repository">
+            <img src="assets/projects/project-diabetes.png" alt="Diabetes prediction analytics dashboard">
+          </a>
+          <div class="project-body">
+            <h3><a href="https://github.com/Yogeshkalmodiya9/Diabetes_ML_Model.git" target="_blank" rel="noopener">Diabetes Prediction</a></h3>
+            <p>A machine learning model that predicts diabetes risk from health indicators and demonstrates applied classification workflow.</p>
+            <div class="tag-row"><span>Python</span><span>Scikit-Learn</span><span>Pandas</span></div>
+            <div class="project-actions">
+              
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal tilt-card">
+          <a class="project-art project-art-image" href="https://github.com/Yogeshkalmodiya9/California_Housing_prediction.git" target="_blank" rel="noopener" aria-label="Open Housing Prediction GitHub repository">
+            <img src="assets/projects/project-house.png" alt="Housing prediction modern house analytics">
+          </a>
+          <div class="project-body">
+            <h3><a href="https://github.com/Yogeshkalmodiya9/California_Housing_prediction.git" target="_blank" rel="noopener">Housing Prediction</a></h3>
+            <p>A regression-focused project for estimating housing prices using structured data and clean model evaluation.</p>
+            <div class="tag-row"><span>Python</span><span>Regression</span><span>NumPy</span></div>
+            <div class="project-actions">
+              
+            </div>
+        </article>
+        <article class="project-card reveal tilt-card">
+          <div class="project-art project-art-soon">YK</div>
+          <div class="project-body">
+            <h3>Coming Soon</h3>
+            <p>A reserved space for the next premium AI project, designed to be swapped quickly as the portfolio grows.</p>
+            <div class="tag-row"><span>AI</span><span>Product</span><span>Future</span></div>
+            <div class="project-actions">
+              <a href="#contact">Discuss Idea</a>
+              <a href="#home">Preview Soon</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-pad contact-section" id="contact">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something useful, polished and intelligent.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-panel reveal">
+          <a href="tel:+910000000000">Phone <strong>+91 8770118517</strong></a>
+          <a href="mailto:yogeshkalmodiya9@gmail.com">Email <strong>yogeskalmodiya@gmail.com</strong></a>
+          <p>Location <strong>India</strong></p>
+          <div class="contact-socials">
+            <a href="https://github.com/Yogeshkalmodiya9" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/yogesh-kalmodiya-895788291/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://leetcode.com/u/pokemon2098/" target="_blank" rel="noopener">LeetCode</a>
+            <a href="https://www.hackerrank.com/profile/kioskcenter11" target="_blank" rel="noopener">HackerRank</a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+          <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+          <label>Subject<input type="text" name="subject" placeholder="Project or opportunity" required></label>
+          <label>Message<textarea name="message" rows="5" placeholder="Tell me what you want to build" required></textarea></label>
+          <button class="btn magnetic ripple" type="submit">Send Message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <h2>Yogesh Kalmodiya</h2>
+      <p>© <span id="year"></span> Yogesh Kalmodiya. All rights reserved.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/Yogeshkalmodiya9" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/yogesh-kalmodiya/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://leetcode.com/u/Yogeshkalmodiya9/" target="_blank" rel="noopener">LeetCode</a>
+      <a href="https://www.hackerrank.com/Yogeshkalmodiya9" target="_blank" rel="noopener">HackerRank</a>
+      <a class="back-top magnetic" href="#home">Back To Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
